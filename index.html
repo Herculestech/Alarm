@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-image: url(./alarm\ img.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+</style>
+<body>
+    <center>
+    <div class="mt-5" id="normalTime"></div><br><br><br><br><br><br><br><br><br><br>
+        <div class="mt-5" style="justify-content: center;">
+    <input class="text-center ms-3" type="hour" name="" id="hour" placeholder="Hour"  style="width: 5%;" maxlength="2"> 
+    <input class="text-center ms-3" type="min" name="" id="min" placeholder="Min" style="width: 5%;" maxlength="2">
+    <input class="text-center ms-2" type="sec" name="" id="sec" placeholder="Sec" style="width: 5%;" maxlength="2"><br>
+    <button class="btn btn-success mt-3 " onclick="setAlarm()">Set Alarm</button>
+    <!-- <button class="btn btn-success mt-3" onclick="newTime()">New Time</button> -->
+    <button class="btn btn-success mt-3 ms-3" onclick="stopAlarm()">STOP</button>
+</div>
+</center>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="alarm.js"></script>
+
+</body>
+</html>
