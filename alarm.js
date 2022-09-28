@@ -32,13 +32,13 @@ const stopAlarm = () =>{
     let stp = prompt("What is 2x + 2 =6,find x");
     if (stp == 2){
         myAlarmSong.pause()
-        wrongAnswer.play()
+        // wrongAnswer.play()
         alert('Wake up')
         location.reload() 
     }else{
         alert("Can't stop this without solving the eqaution")
         myAlarmSong.pause()
-        // wrongAnswer.play()
-        // notCorrectAnswer.loop
+        wrongAnswer.play()
+        notCorrectAnswer.loop
     }
 }
