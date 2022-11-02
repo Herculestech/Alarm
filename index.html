@@ -18,15 +18,15 @@
 </style>
 <body>
     <center>
-    <div class="mt-5" id="normalTime"></div><br><br><br><br><br><br><br><br><br><br>
-        <div class="mt-5" style="justify-content: center;">
-    <input class="text-center ms-3" type="hour" name="" id="hour" placeholder="Hour"  style="width: 5%;" maxlength="2"> 
-    <input class="text-center ms-3" type="min" name="" id="min" placeholder="Min" style="width: 5%;" maxlength="2">
-    <input class="text-center ms-2" type="sec" name="" id="sec" placeholder="Sec" style="width: 5%;" maxlength="2"><br>
-    <button class="btn btn-success mt-3 " onclick="setAlarm()">Set Alarm</button>
-    <!-- <button class="btn btn-success mt-3" onclick="newTime()">New Time</button> -->
-    <button class="btn btn-success mt-3 ms-3" onclick="stopAlarm()">STOP</button>
-</div>
+        <section><br><br><br><br><br><br><br><br><br>
+            <div id="disp"></div>
+        <input type="datetime-local" onchange="setAlarmTime(this.value)" name="alarmTime">
+        <div class="controls">
+            <button class="btn btn-success mt-5 " onclick="setAlarm()">Set Alarm</button>
+            <button class="btn btn-success mt-5 ms-3" onclick="clearAlarm()">Clear Alarm</button>  
+            <!-- <button onclick="test()" class="btn btn-success">Test</button> -->
+        </div>
+</section>
 </center>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="alarm.js"></script>
